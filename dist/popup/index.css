@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow: hidden;
+    width: 5rem;
+    height: 3rem;
+}
+body {
+    margin: auto;
+    padding: .2rem .1rem;
+    color: #eee;
+    font-size: .16rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: auto 120%;
+    background-position: center center;
+}
+.flex {
+    display: flex;
+}
+.flex-center {
+    align-items: center;
+}
+.grow {
+    flex-grow: 1;
+}
+
+.win .top{
+    text-align: center;
+    padding: .1rem 0;
+    height: 1rem;
+}
+.win .top h2 {
+    color: #fff;
+    background-image: linear-gradient(to right,skyblue, orange, red);
+}
+.win .top p {
+    font-weight: 800;
+    padding-top: .25em;
+    font-size: .2rem;
+    color: #80808F;
+    background: linear-gradient(to right, green, skyblue);
+}
+.win .top h2,
+.win .top p {
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.win .bottom .settings {
+    padding: 0 .15rem;
+}
+.win .bottom .settings .item {
+    height: .6rem;
+}
+.win .bottom .settings .item .title {
+    width: 4.5em;
+    font-size: .18rem;
+}
+.colors .color {
+    cursor: pointer;
+    transition: .3s;
+}
+.colors .color + .color {
+    margin-left: -.05rem;
+}
+.colors .color:first-child {
+    margin-left: 0 !important;
+}
+.colors .color:hover {
+    margin-left: .05rem;
+}
+.colors .color:hover + .color {
+    margin-left: .1rem;
+}
+.colors .color span{
+    display: block;
+    width: .4rem;
+    height: .3rem;
+    border-radius: .04rem;
+    transform: scale(1) skew(-35deg, 0deg) translate(.1rem, 0px);
+    box-shadow: 0 .02rem .06rem rgb(36 37 38);
+}
+.colors .color input{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.btn {
+    margin-right: .1rem;
+    border: none;
+    padding: .5em;
+    font-weight: 800;
+    border-radius: .25em;
+    cursor: pointer;
+    font-size: .16rem;
+    --bg-opacity: .7;
+    
+    box-shadow: 0.02rem 0.02rem 0 0 rgba(12, 12, 12, var(--bg-opacity));
+}
+.btn.orange {
+    color: #fff;
+    background-color: orange;
+}
+.btn:active {
+    transform: translate(0.02rem, 0.02rem);
+    --bg-opacity: .3;
+}

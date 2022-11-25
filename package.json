@@ -1,0 +1,20 @@
+{
+    "name": "yuque-theme",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev:popup": "esbuild src/popup/index.html src/popup/index.css src/popup/index.ts --bundle --loader:.html=copy --loader:.css=copy --loader:.webp=dataurl --outdir=dist/popup --watch",
+        "build:popup": "esbuild src/popup/index.html src/popup/index.css src/popup/index.ts --bundle --loader:.html=copy --loader:.css=copy --loader:.webp=dataurl --outdir=dist/popup",
+        "build:index": "esbuild src/index.ts --bundle --loader:.css=text --outfile=dist/scripts/content_scripts.js --minify",
+        "build": "node scripts/build.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "esbuild": "^0.15.15",
+        "shelljs": "^0.8.5",
+        "typescript": "^4.9.3"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "yuque-theme",
+    "version": "0.1.0",
+    "description": "语雀暗黑主题拓展",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.yuque.com/*", "https://*.yuque.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.yuque.com/*", "https://*.yuque.com/*"],
+            "js": ["scripts/content_scripts.js"]
+        }
+    ],
+    "icons": {
+        "16": "assets/icons/yuque16.png",
+        "48": "assets/icons/yuque48.png",
+        "128": "assets/icons/yuque128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "assets/icons/black16.png",
+            "24": "assets/icons/black24.png",
+            "32": "assets/icons/black32.png"
+        },
+        "default_title": "kiss my ass",
+        "default_popup": "popup/index.html"
+    },
+    "manifest_version": 3
+}

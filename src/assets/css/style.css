@@ -1,0 +1,86 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.2) !important;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #bbb;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.25) !important;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,255,0,0.4) !important;
+}
+
+:root {
+
+    /** 主题色，应该其他由js进行拓展 */
+    --tool-white: --yq-yuque-grey-9;
+    --yq-ant-heading-color: var(--tool-white);
+    --yq-white: var(--tool-base);
+    --yq-bg-secondary: var(--tool-secondary);
+    --yq-text-body: var(--tool-white);
+
+    --yq-background-base: var(--tool-base);
+    /* --yq-text-primary: var(--tool-white); */
+    --yq-black: var(--tool-white);
+    --yq-bg-primary-hover: var(--tool-hover);
+    --yq-ant-btn-default-bg: var(tool-btn-bg);
+    --yq-ant-btn-default-border: var(tool-btn-bg);
+    --yq-ant-input-bg: var(tool-btn-bg);
+    --yq-ant-input-addon-bg: var(tool-btn-bg);
+
+    --yq-border-primary: var(--yq-yuque-green-1);
+    --yq-theme: var(--yq-yuque-green-7);
+}
+
+html, body ,
+.footer, .main-wrapper, html, html body{
+    background-color: var(--tool-base);
+}
+.ant-input-group-addon {
+    background-color: var(--tool-btn-bg);
+    border-color: var(--tool-btn-bg);
+}
+#header {
+    background-color: var(--yq-bg-primary-hover);
+}
+ne-quote {
+    padding: 1em;
+    border-radius: .5em;
+    background-color: var(--yq-bg-primary-hover);
+}
+ne-quote::before {
+    /* background-color: var(--yq-bg-primary-hover); */
+    display: none;
+}
+.ne-viewer ne-card {
+    border: none !important;
+}
+ne-code-content {
+    border-color: var(--tool-hover);
+}
+
+ne-p {
+    color: var(--tool-text)
+}
+.isWin > .lark > .main-wrapper > div {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+.isWin > .lark > .main-wrapper > div > div > div {
+    background-color: var(--tool-secondary);
+}
+.ant-table-tbody>tr.ant-table-row:hover>td {
+    background-color: var(--tool-secondary);
+
+}
+#main {
+    min-height: calc(100vh - 64px)
+}
+.Books-module_book_wAfDM.larkui-card-transparent-head {
+    background-color: transparent !important;
+}
